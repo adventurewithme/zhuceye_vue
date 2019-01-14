@@ -35,7 +35,7 @@
 </template>
 
 <script>
-const pings = "http://10.50.10.117:8090";
+const pings = "http://marketing.zspuhui.com";
 console.log(process.env.NODE_ENV);
 import axios from "axios";
 import Vue from "vue";
@@ -73,7 +73,7 @@ export default {
         .get(
           process.env.NODE_ENV === "production"
             ? pings +
-                "/marketing_war_exploded/a/qrcode/qrcodeMarket/getMarketQrcode"
+                "/a/qrcode/qrcodeMarket/getMarketQrcode"
             : "/marketing_war_exploded/a/qrcode/qrcodeMarket/getMarketQrcode",
           { params: { userNo: number } }
         )
