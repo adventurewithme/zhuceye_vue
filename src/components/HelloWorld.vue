@@ -94,7 +94,6 @@ export default {
           console.log(res.data.data)
         })
         .catch(res => {
-          console.log(res,'aaa')
           that.code_none_400=true;
           that.window=true;
         });
