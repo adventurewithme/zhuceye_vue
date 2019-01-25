@@ -8,6 +8,7 @@
         <p class="f24_d">诚信·合规·创新·高效</p>
         <p class="f14_3">- 专注高效 坚守合规 用心服务 -</p>
         <div class="code_img" @click="code_long()" id="qrcode"></div>
+        <!-- <div class="code_img" @longtap="code_long()" id="qrcode"></div> -->
         <p class="f18_d">长按扫码/保存图片</p>
       </div>
     </div>
@@ -37,12 +38,7 @@ export default {
   methods: {
     code_long(){
       var that=this;
-      that.$router.push('/loseefficacy')
-      // jQuery('#output').qrcode("http://jetienne.com");
-      // jQuery('#output').text('aaa');
-
-
-
+      // that.$router.push('/loseefficacy')
 
     }
   }
@@ -59,7 +55,8 @@ export default {
   color: #fff;
 }
 .code_body .body {
-  padding: .42rem .6rem;
+  /* padding: .42rem .6rem; */
+  padding: .42rem 0;
   box-sizing: border-box;
 }
 .code_body .f14_f {
@@ -67,11 +64,12 @@ export default {
   line-height: .4rem;
 }
 .code_body .code_w {
-  width: 100%;
+  width: 84%;
   height:8.34rem;
   background: url(../assets/bgs.png) no-repeat;
   background-size: 100% 100%;
   margin-top: .6rem;
+  margin-left: 8%;
   padding: .64rem 0 0 0;
   box-sizing: border-box;
   color: #D2AF6B;
