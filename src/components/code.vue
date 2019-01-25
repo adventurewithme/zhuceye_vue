@@ -20,7 +20,6 @@ import $ from "jquery";
 var QRCode = require('qrcode')
 export default {
   name: "register",
-
   mounted() {
     var img_url=window.location.href.split('=')[1];
     console.log(unescape(img_url),'url');
